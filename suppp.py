@@ -6,7 +6,7 @@ import numpy as np
 st.title("phishing website detection app")
 
 filename="kmodel.pk"
-with open(path.join("model",filename),'rb') as f:
+with open(path.join(filename),'rb') as f:
     lr=pickle.load(f)
     
 Domain=st.text_input("insert a sepel length")
